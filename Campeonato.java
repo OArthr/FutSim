@@ -35,6 +35,7 @@ public class Campeonato {
 			m.perder(-saldo);
 			n.ganhar(-saldo);
 		}
+		System.out.println(m.getNome()+" vs "+n.getNome()+"\n      "+gm+" x "+gn+"\n");
 	}
 	
 	public void jogarCampeonato() {
@@ -68,6 +69,7 @@ public class Campeonato {
 					"\nPontos: "+clubes[i].getPontos()+
 					"\nSaldo: "+clubes[i].getSaldoGol());
 		}
+		System.out.println("--------------------------\n\n");
 	}
 	
 	public Clube getCampeao() {
