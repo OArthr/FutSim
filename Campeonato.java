@@ -41,7 +41,7 @@ public class Campeonato {
 	public void jogarCampeonato() {
 		for(i = 0; i < this.n - 1; i++) {
 			for(j = i+1; j < this.n; j++) {
-				System.out.println("-------------------------");
+				System.out.println("------------------------");
 				this.jogarPartida(clubes[i], clubes[j]);
 				this.jogarPartida(clubes[j], clubes[i]);
 			}

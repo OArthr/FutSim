@@ -19,9 +19,9 @@ public class Teste {
 		}
 		camp.jogarCampeonato();
 		camp.getClassificacao();
-		System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n\n"
+		System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n"
 				+ "Campeão: "+camp.getCampeao().getNome()+
-				"\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+				"\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
 		scan.close();
 		
 	}
