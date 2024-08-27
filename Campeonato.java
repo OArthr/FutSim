@@ -35,12 +35,15 @@ public class Campeonato {
 			m.perder(-saldo);
 			n.ganhar(-saldo);
 		}
+		System.out.println(m.getNome()+" vs "+n.getNome()+"\n      "+gm+" x "+gn+"\n");
 	}
 	
 	public void jogarCampeonato() {
 		for(i = 0; i < this.n - 1; i++) {
 			for(j = i+1; j < this.n; j++) {
+				System.out.println("-------------------------");
 				this.jogarPartida(clubes[i], clubes[j]);
+				this.jogarPartida(clubes[j], clubes[i]);
 			}
 		}
 	}
@@ -68,6 +71,7 @@ public class Campeonato {
 					"\nPontos: "+clubes[i].getPontos()+
 					"\nSaldo: "+clubes[i].getSaldoGol());
 		}
+		System.out.println("--------------------------\n\n");
 	}
 	
 	public Clube getCampeao() {
